@@ -28,11 +28,13 @@ class LolGameTeamEndOfGameStats:
     dragonKills: int = None  # Total dragon kills
     baronKills: int = None  # Total baron kills
     hordeKills: int = None # Total void grub kills
+    atakhanKills: int = None # Total atakhan kills
 
     firstRiftHerald: bool = None  # True if the team killed the first Rift Herald
     firstDragon: bool = None  # True if the team killed the first Dragon
     firstBaron: bool = None  # True if the team killed the first Nashor
     firstHorde: bool = None # True if the team killed the first void grub
+    firstAtakhan: bool = None # True if the team killed the first atakhan
 
 
 @dataclass
