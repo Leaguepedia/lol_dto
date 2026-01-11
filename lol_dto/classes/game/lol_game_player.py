@@ -139,6 +139,7 @@ class LolGamePlayerItem(ItemNameClass):
 
     id: int  # Referring to Riot API item ID
     slot: int = None  # Goes from 0 to 6 as of 2020
+    roleBound: bool = False
 
 
 @dataclass
@@ -265,6 +266,9 @@ class LolGamePlayerEndOfGameStats:
 
     # List of end of game items
     items: List[LolGamePlayerItem] = field(default_factory=list)
+
+    # Role-bound item introduced in 26.1
+    roleBoundItem: LolGamePlayerItem = None
 
 
 @dataclass

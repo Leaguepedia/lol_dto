@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lol_dto"
-version = "2.0.1"
+version = "2.0.2"
 description = "A unified representation of League of Legends-related information"
 authors = ["mrtolkien <gary.mialaret+pypi@gmail.com>"]
 license = "MIT"
@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-lol-id-tools = { git = "https://github.com/Leaguepedia/lol_id_tools.git", version = "^1.7.1", optional = true }
+lol-id-tools = { git = "https://github.com/Leaguepedia/lol_id_tools.git", optional = true }
 
 [tool.poetry.extras]
 names = ["lol-id-tools"]
